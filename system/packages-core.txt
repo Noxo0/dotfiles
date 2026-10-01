@@ -1,0 +1,46 @@
+# Core system packages for minimal Fedora
+# Display server and basic graphics
+wayland
+xorg-x11-server-Xwayland
+mesa-dri-drivers
+vulkan-loader
+
+# Display manager (lightweight alternative to GDM)
+sddm
+sddm-themes
+
+# Audio
+pipewire
+pipewire-pulseaudio
+wireplumber
+pipewire-alsa
+
+# Fonts
+google-noto-sans-cjk-fonts
+google-noto-emoji-fonts
+fontconfig
+
+# Basic utilities
+curl
+wget
+git
+vim
+neovim
+htop
+btop
+tmux
+unzip
+zip
+rsync
+
+# Development tools (for building shell components)
+gcc
+gcc-c++
+make
+cmake
+pkg-config
+python3-pip
+
+# Security
+gnupg2
+pass

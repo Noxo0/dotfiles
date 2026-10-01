@@ -1,0 +1,57 @@
+# Hyprland and Wayland compositor dependencies
+hyprland
+
+# Wayland utilities
+waybar
+wlogout
+wofi
+rofi-wayland
+swaylock-effects
+swayidle
+wl-clipboard
+wlroots
+
+# Screen sharing and portal
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+
+# Notifications
+dunst
+libnotify
+
+# Screenshot and recording
+grim
+slurp
+wf-recorder
+
+# Backgrounds
+swww
+
+# Polkit agent
+polkit-gnome
+
+# Terminal
+kitty
+alacritty
+
+# File manager
+thunar
+thunar-volman
+tumbler
+
+# Network manager applet
+network-manager-applet
+
+# Bluetooth
+bluez
+bluez-tools
+blueman
+
+# Audio control
+pavucontrol
+pamixer
+
+# System monitoring
+nwg-look
+nwg-bar

@@ -1,0 +1,23 @@
+{
+  "name": "FedDeck",
+  "id": "com.feddeck",
+  "version": "1.0.0",
+  "author": "Custom Build",
+  "homepage": "https://github.com/yourusername/feddeck",
+  "source": "https://github.com/yourusername/feddeck.git",
+  "subfolder": ".",
+  "restore": [
+    {
+      "title": "Hyprland Configuration",
+      "source": ".config/hypr"
+    },
+    {
+      "title": "Quickshell Shell",
+      "source": ".config/quickshell"
+    },
+    {
+      "title": "System Theme",
+      "source": ".config/theme"
+    }
+  ]
+}

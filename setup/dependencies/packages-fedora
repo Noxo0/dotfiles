@@ -1,0 +1,30 @@
+#!/bin/bash
+# Install Fedora packages for FedDeck
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../" && pwd)"
+echo "==> Installing FedDeck packages"
+echo "Repository root: $SCRIPT_DIR"
+
+# Update system first
+sudo dnf upgrade -y
+
+# Install core packages
+echo "Installing core system packages..."
+xargs -a "$SCRIPT_DIR/system/packages-core.txt" sudo dnf install -y
+
+# Install Hyprland and Wayland packages
+echo "Installing Hyprland and Wayland packages..."
+xargs -a "$SCRIPT_DIR/system/packages-hyprland.txt" sudo dnf install -y
+
+# Install shell dependencies
+echo "Installing Quickshell and shell packages..."
+xargs -a "$SCRIPT_DIR/system/packages-shell.txt" sudo dnf install -y
+
+# Enable services
+echo "Enabling system services..."
+sudo systemctl enable --now sddm
+sudo systemctl enable --now pipewire
+sudo systemctl enable --now bluetooth
+
+echo "==> Package installation complete"

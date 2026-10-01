@@ -1,0 +1,29 @@
+# Quickshell and custom shell dependencies
+qt6-qtbase
+qt6-qtdeclarative
+qt6-qtquickcontrols2
+qt6-qtsvg
+qt6-qtwayland
+
+# Quickshell (install from source or COPR if available)
+# Note: Quickshell may need to be built from source
+# https://github.com/woutwoor/quickshell
+
+# Additional Qt modules for shell
+qt6-qtgraphicaleffects
+qt6-qtmultimedia
+
+# Theme engine
+qt6-qtquicktimeline
+
+# Icon themes
+papirus-icon-theme
+adwaita-icon-theme
+
+# Cursor themes
+bibata-cursor-theme
+
+# Fonts for shell
+fira-code-fonts
+jetbrains-mono-fonts
+inter-fonts

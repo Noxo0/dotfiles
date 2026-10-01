@@ -1,0 +1,29 @@
+# Backups
+*.backup-*
+backup-*/
+
+# Compiled files
+*.o
+*.so
+*.pyc
+__pycache__/
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Personal configs (if you have local overrides)
+.local/
+.cache/
